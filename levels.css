@@ -1,0 +1,96 @@
+#level-1 {
+  display: grid;
+  grid-template-areas:
+  "peas onions"
+  "tomato lettuce"
+  "carrots .";
+}
+
+#level-2 {
+  display: grid;
+  grid-template-areas: 
+  "peas peas"
+  "onions tomatos"
+  "lettuce carrots";
+   
+.peas {
+  grid-column: 1 / span 2;
+}
+}
+
+#level-3 {
+  display:grid;
+  grid-template-areas:
+  "peas onions onions"
+  "tomatoes tomatoes lettuce"
+  "carrots carrots carrots";
+
+  .onions {
+    grid-column: 2/ span 2;
+  }
+
+  .tomatoes {
+    grid-column: 1 / span 2;
+
+  }
+
+  .carrots {
+    grid-column: 1 / span 3;
+  }
+}
+
+
+#level-4 {
+  display: grid;
+  grid-template-areas: 
+  "peas peas onions carrots"
+  "tomatoes lettuce onions carrots";
+
+  .peas {
+    grid-column: 1 / span 2;
+  }
+
+  .onions {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;
+  }
+
+  .carrots {
+    grid-column: 4/ span 1;
+    grid-row: 1 / span 2;
+  }
+
+}
+
+#level-5 {
+  display: grid;
+  grid-template-areas: 
+  "carrots . onions . lettuce"
+  "carrots . onions peas peas"
+  "carrots tomatoes tomatoes tomatoes .";
+
+  .carrots {
+    grid-column: 1 ;
+    grid-row: 1 / span 5;
+  }
+  .onions {
+    grid-column: 3;
+    grid-row: 1 /span 2;
+  }
+
+  .lettuce {
+    grid-column: 5;
+    grid-row: 1
+
+  }
+
+  .peas {
+    grid-column: 4 / span 2;
+    grid-row: 2 ;
+  }
+
+  .tomatoes {
+    grid-column: 2 / span 3;
+    grid-row: 3 / span 3;
+  }
+}
